@@ -15,5 +15,6 @@ calificacion.automf(number=3, names=['baja', 'media', 'alta'])
 
 print(calificacion.view())
 
+#pip install scikit-fuzzy
 #pip install matplotlib
 #pip install mpld3
