@@ -32,9 +32,9 @@ rule6=ctrl.Rule(reparaciones['altas'] | monto_reparacion['alto'] & calificacion[
 
 control_system=ctrl.ControlSystem([rule3,rule2,rule1,rule4,rule5,rule6])
 fuzzy_system=ctrl.ControlSystemSimulation(control_system)
-fuzzy_system.input['reparaciones']=1
-fuzzy_system.input['monto_reparacion']=1
-fuzzy_system.input['calificacion']=1
+fuzzy_system.input['reparaciones']= 9
+fuzzy_system.input['monto_reparacion']= 3400
+fuzzy_system.input['calificacion']= 65
 fuzzy_system.compute()
 print(fuzzy_system.output['prima'])
 prima.view(sim=fuzzy_system)
