@@ -44,4 +44,3 @@ prima.view(sim=fuzzy_system)
 #pip install mpld3
 
 #CON GAUSS
-
